@@ -1,0 +1,13 @@
+{
+  "name": "menu_coyo",
+  "version": "1.5",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Enrique Jeronimo Dev",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemailer": "^8.0.4"
+  }
+}

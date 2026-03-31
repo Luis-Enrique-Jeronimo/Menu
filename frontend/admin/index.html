@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Los Cafés de Coyo</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <section id="login-section" class="container">
+        <h2>Acceso Administrativo</h2>
+        <div id="step-email">
+            <p>Ingresa tu correo para recibir el código de acceso temporal.</p>
+            <input type="email" id="admin-email" placeholder="admin@cafescoyo.com" required>
+            <button onclick="solicitarCodigo()">Enviar Código</button>
+        </div>
+        
+        <div id="step-otp" class="hidden">
+            <p>Se ha enviado un código a tu correo.</p>
+            <input type="text" id="admin-otp" placeholder="Código de 6 dígitos" required>
+            <button onclick="verificarCodigo()">Ingresar al Panel</button>
+        </div>
+        <p id="login-msg" class="msg"></p>
+    </section>
+
+    <section id="dashboard-section" class="container hidden">
+        <header class="dashboard-header">
+            <h2>Panel de Control</h2>
+            <button onclick="cerrarSesion()" class="btn-danger">Cerrar Sesión</button>
+        </header>
+
+        <div class="crud-grid">
+            <div class="crud-panel">
+                <h3>Gestión de Menú</h3>
+                <button onclick="guardarMenu()" class="btn-success">Guardar Cambios en Menú</button>
+                <div id="editor-menu"></div> </div>
+
+            <div class="crud-panel">
+                <h3>Gestión de Promociones</h3>
+                <div class="form-promo">
+                    <input type="text" id="promo-titulo" placeholder="Título">
+                    <input type="text" id="promo-desc" placeholder="Descripción">
+                    <button onclick="crearPromocion()">Agregar Promoción</button>
+                </div>
+                <ul id="lista-promos"></ul> </div>
+        </div>
+    </section>
+
+    <script src="admin.js"></script>
+</body>
+</html>
