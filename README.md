@@ -6,12 +6,12 @@ El siguiente menú es un programa sencillo con la finalidad que el cliente tenga
 
 - FrontEnd
 
-** HTML **
-** CSS **
-** Java Script ** 
+    - HTML
+    - CSS 
+    - Java Script 
 
 - Backend
-
-** JSON **
-** Node JS **
+        
+    - JSON
+    - Node JS
 
