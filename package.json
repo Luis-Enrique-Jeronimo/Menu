@@ -1,10 +1,10 @@
 {
   "name": "menu_coyo",
-  "version": "1.5",
+  "version": "1.5 beta",
   "description": "",
   "main": "index.js",
   "keywords": [],
-  "author": "Enrique Jeronimo Dev",
+  "author": "EnriqueJeronimo_Dev",
   "license": "ISC",
   "dependencies": {
     "express": "^5.2.1",

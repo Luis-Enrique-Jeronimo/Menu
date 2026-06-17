@@ -14,4 +14,6 @@ El siguiente menú es un programa sencillo con la finalidad que el cliente tenga
         
     - JSON
     - Node JS
+    - Express
+    - NodeMailer
 
